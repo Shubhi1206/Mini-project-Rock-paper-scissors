@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stone Paper Scissors</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Stone Paper Scissors</h1>
+
+        <div class="choices">
+            <button class="choice" onclick="playGame('stone')">
+                ✊
+                <span>Stone</span>
+            </button>
+
+            <button class="choice" onclick="playGame('paper')">
+                ✋
+                <span>Paper</span>
+            </button>
+
+            <button class="choice" onclick="playGame('scissors')">
+                ✌️
+                <span>Scissors</span>
+            </button>
+        </div>
+
+        <div class="result-box">
+            <p id="user-choice">Your Choice: -</p>
+            <p id="computer-choice">Computer Choice: -</p>
+            <h2 id="result">Choose an option!</h2>
+        </div>
+
+        <div class="score-board">
+            <div>
+                <h3>You</h3>
+                <p id="user-score">0</p>
+            </div>
+
+            <div>
+                <h3>Computer</h3>
+                <p id="computer-score">0</p>
+            </div>
+        </div>
+
+        <button id="reset-btn" onclick="resetGame()">
+            Reset Game
+        </button>
+    </div>
+
+    <script src="rps.js"></script>
+
+</body>
+</html>
